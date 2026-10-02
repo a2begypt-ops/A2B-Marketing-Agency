@@ -1,0 +1,15 @@
+{
+  "name": "a2b-marketing-agency",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "build": "node build.mjs",
+    "start": "node --env-file-if-exists=.env server.mjs",
+    "setup:owner": "node --env-file-if-exists=.env scripts/create-owner.mjs",
+    "check": "node scripts/check-package.mjs"
+  }
+}
